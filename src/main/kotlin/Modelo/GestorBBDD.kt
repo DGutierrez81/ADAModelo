@@ -14,7 +14,10 @@ class GestorBBDD {
     private var connection: Connection? = null
     private var statement: Statement? = null
 
-
+    /**
+     * Se realiza la conexión a la BBDD
+     * @return Devuelve un mensaje de confirmación o de error.
+     */
 
     fun ConectarBBDD(): String{
         return try{
@@ -31,7 +34,9 @@ class GestorBBDD {
         }
     }
 
-
+    /**
+     * Se crea la tabla aunque no está incluida en el modelo.
+     */
     fun CrearTabla(){
         try{
             statement = connection!!.createStatement()
@@ -51,6 +56,13 @@ class GestorBBDD {
             println("No se inició la BBDD: ${e.message}")
         }
     }
+
+    /**
+     * Modifica los datos de la tabla
+     * @param id identificador de cada producto
+     * @param nombre es el nombre del producto
+     * @param precio es el precio del producto
+     */
 
     fun ModidificarDatos(id: Int, nombre: String, precio: Float): String{
         var actualizar = 0
@@ -74,6 +86,10 @@ class GestorBBDD {
         }
     }
 
+    /**
+     * Se le pasa identificador para borrar el producto deseado
+     * @param id identificador del producto.
+     */
     fun BorrarFila(id: String): String{
         return try{
             val producto = connection!!.prepareStatement(Sentencia.borrarFila)
@@ -92,6 +108,12 @@ class GestorBBDD {
         }
     }
 
+    /**
+     * Pasando los datos introduce un nuevo producto en la tabla.
+     * @param id identificador de cada producto
+     * @param nombre es el nombre del producto
+     * @param precio es el precio del producto
+     */
     fun Insertar(id: Int, nombre: String, precio: Float){
         try{
             val insertar = connection!!.prepareStatement(Sentencia.insertar)
@@ -106,6 +128,10 @@ class GestorBBDD {
         }
     }
 
+    /**
+     * Permite realizar una consulta global de la tabla
+     * @return Devuelve una lista del objeto producto
+     */
     fun SelecTodo(): MutableList<Producto>?{
         return try{
             val resultado = mutableListOf<Producto>()
@@ -125,6 +151,11 @@ class GestorBBDD {
         }
     }
 
+    /**
+     * Permite realizar una consulta de un producto en concreto a través de su identificador
+     * @param id identificador del producto
+     * @return devuelve un String con la fila del producto deseado
+     */
     fun ConsultaEspecifica(id: String): String{
         return try{
             var resultado = ""
@@ -145,6 +176,10 @@ class GestorBBDD {
         }
     }
 
+    /**
+     * Realiza la desconexión de la BBDD
+     * @return Devuleve un mensaje de confirmacion
+     */
     fun desconectarBBDD(): String{
         var resultado = ""
 

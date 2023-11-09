@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f29f0a1c-a206-4bc2-9a4e-a4922028b8ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modelo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Controlador/Controlador.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Modelo/GestorBBDD.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Modelo/Producto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Modelo/Sentencia.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Vista/Vista.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Controlador/Controlador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Controlador/Controlador.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Modelo/GestorBBDD.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Modelo/GestorBBDD.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Modelo/Producto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Modelo/Producto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Modelo/Sentencia.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Modelo/Sentencia.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Vista/Vista.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Vista/Vista.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
